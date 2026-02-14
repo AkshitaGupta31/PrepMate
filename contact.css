@@ -1,0 +1,126 @@
+.contact-page-wrapper {
+  min-height: 100vh;
+  background-color: #ccbfb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .contact-card {
+    flex-direction: row;
+  }
+}
+
+.contact-left {
+  flex: 2;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.contact-header {
+  
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.5rem;
+  background-color: transparent;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #d9a59c;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #d9a59c;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #c48a8a;
+}
+
+.contact-right {
+  flex: 1;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-socials svg {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.contact-socials svg:hover {
+  color: #d9a59c;
+}
+
+

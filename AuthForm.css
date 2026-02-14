@@ -1,0 +1,121 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 50px;
+}
+
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeSlideIn 0.6s ease forwards;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  background: none;
+  border: 2px solid #8B4513;
+  padding: 8px 20px;
+  margin: 0 5px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #5D2E0C ;
+}
+
+.form-toggle .active {
+  background: #5D2E0C ;
+  color: white;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.auth-btn {
+  width: 100%;
+  background-color: #5D2E0C ;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color:  #8B4513;
+}
+
+.auth-toggle-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #8B4513;
+  cursor: pointer;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.auth-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 330px; /* adjust height based on content */
+  position: relative;
+}
+
+.auth-slider {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.auth-slide {
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slide-login {
+  transform: translateX(0%);
+}
+
+.slide-signup {
+  transform: translateX(-50%);
+}

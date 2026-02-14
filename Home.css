@@ -1,0 +1,107 @@
+/* Home.css */
+:root {
+
+  --text-color: #ffffff;
+  --accent-color: #00d8ff;
+  --hero-p-color: #e0e0e0;
+  --btn-bg: rgba(255, 255, 255, 0.15);
+  --btn-text: #fff;
+  --btn-hover-bg: #3498db;
+}
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #007acc;
+  --hero-p-color: #333333;
+  --btn-bg: rgba(0, 0, 0, 0.1);
+  --btn-text: #111;
+  --btn-hover-bg: #007acc;
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden; 
+  background-color: var(--bg-color);
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("C:/Users/akshi/OneDrive/Documents/pylearn/peer-matchmaker-client-app/landing_bg.png");
+  background-size:cover;
+  background-position: center;
+  filter: brightness(0.5) blur(2px);
+  z-index: -1;
+  transform: scale(1.1);
+}
+
+
+.hero {
+  max-width: 900px;
+  z-index: 1;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero h1 {
+  color: var(--text-color);
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.hero span {
+  color: var(--accent-color);
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: rgb(81, 226, 240);
+  color: var(--btn-text);
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--btn-text);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.btn:hover {
+  background-color: #3498db;
+  color: white;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.gradient-text {
+  background: linear-gradient(90deg, #00d8ff, #007acc, #00d8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+
+

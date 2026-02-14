@@ -1,0 +1,30 @@
+/*nav.css*/
+body {
+  font-family: 'PT Serif', 'Playfair Display', 'Poiret One', serif;
+  
+}
+.nav-links li a {
+  font-family: 'PT Serif', 'Playfair Display', 'Poiret One', serif;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 1px;
+  font-weight: 500;
+  color: #2c2c2c;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3498db;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
